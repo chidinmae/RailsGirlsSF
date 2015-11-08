@@ -5,6 +5,7 @@ class IdeasController < ApplicationController
   # GET /ideas.json
   def index
     @ideas = Idea.all
+    p @ideas
   end
 
   # GET /ideas/1
@@ -15,6 +16,8 @@ class IdeasController < ApplicationController
   # GET /ideas/new
   def new
     @idea = Idea.new
+    p "*" * 100
+    p @idea
   end
 
   # GET /ideas/1/edit
